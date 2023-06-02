@@ -3,12 +3,16 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/PageStyles/Home.module.css'
 import NavBar from '../components/NavBar'
+import { useUser } from '@auth0/nextjs-auth0/client'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 
 
 export default function Home() {
+  const { user } = useUser()
+  
   return (
     <>
       <Head>
@@ -19,7 +23,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <header>
-          <NavBar />
+          <NavBar user={user} />
           
         </header>
         <section>
