@@ -31,9 +31,6 @@ button:hover {
   cursor: pointer;
 }
 
-// @import compass;
-
-
 // n is number of stars required
 @function multiple-box-shadow ($n) {
   $value: '#{random(2000)}px #{random(2000)}px #FFF';
