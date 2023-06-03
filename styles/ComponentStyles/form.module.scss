@@ -1,0 +1,38 @@
+.mainList {
+    list-style: none;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.listItem {
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
+
+.listInput {
+    width:15rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background: gainsboro;
+    padding-left: 1rem;
+}
+
+.itemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-top: 1rem;
+}
+
+.submitBtn {
+    margin-top: 1rem;
+    margin-right: 3.5rem;
+}
+
