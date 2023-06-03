@@ -1,4 +1,58 @@
 .main {
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.titleSection {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+}
+
+.title {
+    padding: 1rem;
+    color: gainsboro;
+}
+
+.textLarge {
+    font-size: 4rem;
+    padding-left: 2rem;
+}
+
+.textMedium {
+    font-size: 2rem;
+}
+
+.textMiddle{
+    padding-left: 4rem;
+}
+
+.textFar {
+    padding-left: 6rem;
+    padding-top: 1rem;
+}
+
+.titleContainer {
+    display: flex;
+    height: 100%;
+    width: 50vw;
+    padding-left: 1rem;
+}
+
+.descriptionContainer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.mainSection {
+    height: 100%;
 }

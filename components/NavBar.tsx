@@ -13,16 +13,15 @@ function NavBar(props: any) {
             </main>
             <div className={styles.loginContainer}>
                 {props.user ?
-                    <Link href='./api/auth/logout' style={{textDecoration: 'none'}}>
+                    <Link href='./api/auth/logout' style={{textDecoration: 'none', fontSize:'20px',color:'white'}}>
                         <h4 className={styles.loginContent}>Logout</h4>
                     </Link>
                     :
-                    <Link href='./api/auth/login'>
+                    <Link href='./api/auth/login' style={{textDecoration: 'none', fontSize:'20px',color:'white'}}>
                         <h4 className={styles.loginContent}>Login/Signup</h4>
                     </Link>
 
                 }
-                <h4 className={styles.loginContent}>Get Started</h4>
             </div>
         </div>
     );

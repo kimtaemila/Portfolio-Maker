@@ -2,11 +2,8 @@
     height: 10vh;
     display: flex;
     justify-content:space-between;
-    color: #fff;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,56,121,1) 43%, rgba(35,79,185,1) 100%);
     box-sizing: border-box;
-    box-shadow: 3px 3px #092079;
+    color: white;
 }
 
 .loginContainer {

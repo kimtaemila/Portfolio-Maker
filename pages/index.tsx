@@ -4,15 +4,12 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/PageStyles/Home.module.css'
 import NavBar from '../components/NavBar'
 import { useUser } from '@auth0/nextjs-auth0/client'
-
-
-const inter = Inter({ subsets: ['latin'] })
-
+import GetStarted from '@/components/GetStarted'
 
 
 export default function Home() {
   const { user } = useUser()
-  
+
   return (
     <>
       <Head>
@@ -22,13 +19,35 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <header>
-          <NavBar user={user} />
-          
-        </header>
-        <section>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+          <div id='stars'></div>
+          <div id='stars2'></div>
+          <div id='stars3'></div>
+          <div id='title'>
+  
+            <br></br>
 
-        </section>
+          </div>
+          <header>
+            <NavBar user={user} />
+          </header>
+          <section className={styles.titleSection}>
+            <div className={styles.titleContainer}>
+              <h1 className={`${styles.title} ${styles.textMedium}`}>
+                A
+                <p className={styles.textLarge}>free</p>
+                <p className={`${styles.textLarge} ${styles.textMiddle}`}>easy,</p>
+                <p className={`${styles.textMedium} ${styles.textFar}`}>portfolio generator...</p>
+              </h1>
+            </div>
+            <div className={styles.descriptionContainer}>
+              <p className={`${styles.textMedium} `}>Unleash your creativity with our seamless solution for a polished, eloquent, and visually stunning portfolio</p>
+              <p className={styles.textMedium}> Don't believe us? Try it.</p>
+            </div>
+          </section>
+          <section className={styles.mainSection}>
+            <GetStarted />
+          </section>
       </main>
     </>
   )
