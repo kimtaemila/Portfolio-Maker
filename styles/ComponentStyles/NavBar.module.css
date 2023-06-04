@@ -21,6 +21,9 @@
     padding-right: 1rem;
     text-decoration: none;
 }
+.loginContent:hover{
+    color: coral;
+}
 
 .title {
     padding-left: 1rem;
